@@ -14,8 +14,8 @@ class StorageCreater:
             os.mkdir(os.path.join(self.storage, "Others"))
 
 class DownloadsFolder:
-    def __init__(self, downloads):
-        self.file = []
-        for file in os.listdir(downloads):
-            self.file.append(file)
-    
+    @staticmethod
+    def Downloads(directory):
+        for file in os.listdir(directory):
+            if(file.split(",")[1] == ("png" or "jpg" or "bmp" or "gif")):
+                
