@@ -15,7 +15,11 @@ class StorageCreater:
         self.storage = storage
 
     def createNewFolders(self):
-        os.mkdir(os.path.join(self.storage, "Pictures"))
-        os.mkdir(os.path.join(self.storage, "Videos"))
-        os.mkdir(os.path.join(self.storage, "Documents"))
-        os.mkdir(os.path.join(self.storage, "Others"))
+        if(not os.path.exists(os.mkdir(os.path.join(self.storage, "Pictures")))):
+            os.mkdir(os.path.join(self.storage, "Pictures"))
+        if(not os.path.exists(os.mkdir(os.path.join(self.storage, "Videos")))):    
+            os.mkdir(os.path.join(self.storage, "Videos"))
+        if(not os.path.exists(os.mkdir(os.path.join(self.storage, "Documents")))):
+            os.mkdir(os.path.join(self.storage, "Documents"))
+        if(not os.path.exists(os.path.join(self.storage, "Others"))):
+            os.mkdir(os.path.join(self.storage, "Others"))
