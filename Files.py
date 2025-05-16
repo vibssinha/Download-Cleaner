@@ -1,7 +1,7 @@
 import os
 import shutil
 
-class dtorageCreater:
+class FileEditor:
     def __init__(self, storage):
         self.storage = storage
 
@@ -17,7 +17,7 @@ class dtorageCreater:
         if(not os.path.exists(os.path.join(self.storage, "Others"))):
             os.mkdir(os.path.join(self.storage, "Others"))
     
-    def Downloads(self, directory):
+    def move(self, directory):
         for file in os.listdir(directory):
             if(file.split(",")[1] in ("png" or "jpg" or "bmp" or "gif")):
                 shutil.move(os.path.join(self.storage, "Downloads"), os.path.join(self.storage, "Pictures"))

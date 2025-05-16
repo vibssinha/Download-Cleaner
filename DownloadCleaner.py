@@ -1,15 +1,8 @@
-from Files import StorageCreater
+from Files import FileEditor
 import os
-downloads = os.path.join("C:", "Users", "Vibs Kumar", "Downloads")
-StorageCreater.createNewFolders()
+import shutil
 
-
-#for file in files:
-  #  if file.split(".")[1] == "pdf" or file.split(".")[1] == "docx":
-
-   # if file.split(".")[1] == "mp3":
-
-  #  if file.split(".")[1] == "jpeg":
-
-   # else:
-        
+user_folder = input("Enter the name of your folder who's downloads you want to clear out")
+cleaner = FileEditor(os.path.join("C:", "Users", user_folder, "Downloads"))
+cleaner.createNewFolders()
+cleaner.move()
