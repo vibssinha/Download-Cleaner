@@ -17,7 +17,7 @@ class FileEditor:
         if(not os.path.exists(os.path.join(self.storage, "Others"))):
             os.mkdir(os.path.join(self.storage, "Others"))
     
-    def move(self, directory):
+    def move(self):
         for file in os.listdir(directory):
             if(file.split(",")[1] in ("png" or "jpg" or "bmp" or "gif")):
                 shutil.move(os.path.join(self.storage, "Downloads"), os.path.join(self.storage, "Pictures"))
