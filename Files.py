@@ -18,7 +18,7 @@ class FileEditor:
             os.mkdir(os.path.join(self.storage, "Others"))
     
     def move(self):
-        for file in os.listdir(directory):
+        for file in os.listdir(os.path.join(self.storage, "Downloads")):
             if(file.split(",")[1] in ("png" or "jpg" or "bmp" or "gif")):
                 shutil.move(os.path.join(self.storage, "Downloads"), os.path.join(self.storage, "Pictures"))
             elif(file.split(",")[1] in ("mp4", "mov", "webm", "mpg", "ogg", "avi", "mov", "flv")):
