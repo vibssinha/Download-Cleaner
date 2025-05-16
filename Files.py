@@ -8,13 +8,13 @@ class FileEditor:
     def createNewFolders(self):
         if(not os.path.exists(self.storage)):
             os.mkdir(self.storage)
-        if(not os.path.exists(os.path.join(self.storage, "Pictures"))):
+        if(not os.path.exists(os.path.join(self.storage, "Downloads", "Pictures"))):
             os.mkdir(os.path.join(self.storage, "Pictures"))
-        if(not os.path.exists(os.path.join(self.storage, "Videos"))):    
+        if(not os.path.exists(os.path.join(self.storage, "Downloads", "Videos"))):    
             os.mkdir(os.path.join(self.storage, "Videos"))
-        if(not os.path.exists(os.path.join(self.storage, "Documents"))):
+        if(not os.path.exists(os.path.join(self.storage, "Downloads", "Documents"))):
             os.mkdir(os.path.join(self.storage, "Documents"))
-        if(not os.path.exists(os.path.join(self.storage, "Others"))):
+        if(not os.path.exists(os.path.join(self.storage, "Downloads", "Others"))):
             os.mkdir(os.path.join(self.storage, "Others"))
     
     def move(self):
