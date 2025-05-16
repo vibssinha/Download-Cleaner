@@ -1,5 +1,5 @@
 # download-cleaner
-After downloading so many things overtime I have a tendancy to have a really long download folder. I have created a file that cleans your downloads folder and organizes each of your files into different folders depending on their file type.
+After downloading so many things overtime I have a tendancy to have a really long download folder. I have created a file that cleans your downloads folder and organizes each of your files into different folders called 'Pictures' 'Videos' 'Documents' or 'Others' depending on their filetype.
 
 DISCLAIMER: THIS CODE IS FOR SYSTEMS THAT RUN ON WINDOWS ONLY
 
