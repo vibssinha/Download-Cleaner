@@ -1,2 +1,2 @@
 # download-cleaner
-Cleans out your downloads folder
+After downloading so many things overtime I have a tendancy to have a really long download folder. I have created a file that cleans your downloads folder and organizes each of your files into different folders depending on their file type.
