@@ -20,10 +20,10 @@ class FileEditor:
     def move(self):
         for file in os.listdir(os.path.join(self.storage, "Downloads")):
             if(file.split(".")[1] in ("png", "jpg", "bmp", "gif", "avif")):
-                shutil.move(os.path.join(self.storage, "Downloads", file), os.path.join(self.storage, "Pictures")) #Make sure you add the actual file otherwise you're moving the directory
+                shutil.move(os.path.join(self.storage, "Downloads", file), os.path.join(self.storage, "Pictures"))
             elif(file.split(".")[1] in ("mp4", "mov", "webm", "mpg", "ogg", "avi", "mov", "flv")):
-                shutil.move(os.path.join(self.storage, "Downloads", file), os.path.join(self.storage, "Videos"))  #Make sure you add the actual file otherwise you're moving the directory
+                shutil.move(os.path.join(self.storage, "Downloads", file), os.path.join(self.storage, "Videos"))
             elif(file.split(".")[1] in ("pdf", "docx", "docm", "doc", "odt", "ppt")):
-                shutil.move(os.path.join(self.storage, "Downloads", file), os.path.join(self.storage, "Documents")) #Make sure you add the actual file otherwise you're moving the directory
+                shutil.move(os.path.join(self.storage, "Downloads", file), os.path.join(self.storage, "Documents"))
             else:
-                shutil.move(os.path.join(self.storage, "Downloads", file), os.path.join(self.storage, "Others")) #Make sure you add the actual file otherwise you're moving the directory
+                shutil.move(os.path.join(self.storage, "Downloads", file), os.path.join(self.storage, "Others"))
