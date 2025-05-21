@@ -13,7 +13,7 @@ Step 1: Make sure you have Python installed. You can check this by running the c
 Step 2: Make sure you know the name of your local drive whose download folder you want to clean, for most people it will probably be their 'C:'. Make sure you also know the username on that drive. You can check this by going into CMD. It should say 'C:\Users\Your_Username>'.
 
 
-Step 3: When you download these files make sure to download them to your download directory and then move them to your directory that contains your downloads directory. You can do this by opening up a brand new CMD and running (Make sure you change "Your_Username" to your actual usename before running it and do not take double quotations off)
+Step 3: When you download these files make sure to download them to your download directory and then move them to your directory that contains your downloads directory. After downloading these files, you can move these files by opening up a brand new CMD and running (Make sure you change "Your_Username" to your actual usename before running it and do not take double quotations off)
 
 move "C:\Users\Your_Username\Downloads\DownloadCleaner.py" "C:\Users\Your_Username\DownloadCleaner.py" && move "C:\Users\Your_Username\Downloads\Files.py" "C:\Users\Your_Username\Files.py"
 
