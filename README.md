@@ -29,4 +29,7 @@ Step 5: It will ask you for the name of the drive whose download folder you want
 Step 6: Your download folder should be clean. Each file was put into folder called Videos, Pictures, Documents, or Others. If you find that a certain file is not where you expect it to be, check others
 
 
+Step 7: If you encounter any kind of error make sure the drive and username are putting in is correct and run "python DownloadCleaner.py" again
+
+
 Have a nice day
